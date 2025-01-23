@@ -1,7 +1,7 @@
 # Portafolio Web Astro
 
 ```sh
-npm create astro@latest -- --template basics
+https://4d1ef5d2.proyecto-web-aq4.pages.dev/
 ```
 
 
