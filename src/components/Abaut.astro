@@ -1,0 +1,138 @@
+---
+
+---
+
+<section>
+
+    <div class="sobre-mi">
+        <img src="/public/img/richard.webp" class="richar" alt="richard">
+        <p class="parrafo-1">Disponible Para Trabajar</p>
+    </div>
+
+    <div class="experiencia">
+        <h1>Hey, soy Richard</h1>
+        <h2 class="h2-1">+1 años de experiencia. <span> desarrollo Software y Creador de Contenido sobre Programación</span> en colombia, magdalena co. Especializado en el desarrollo de aplicaciones web únicas.</h2>
+    </div>
+
+    <div class="redes">
+        <a target="_blank" href=""><img src="/src/assets/gmail.svg" class="svg" alt="gmail">Gmail</a>
+        <a target="_blank" href=""><img src="/src/assets/whatsapp.svg" class="svg" alt="whatsapp">whatsapp</a>
+        <a target="_blank" href=""><img src="/src/assets/Github_light.svg" class="svg" alt="Github">Github</a>
+    </div>
+</section>
+
+<style>
+    .sobre-mi{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 500px;
+    }
+
+    .richar{
+        width: 70px;
+        border-radius: 50%;
+    }
+    
+    .parrafo-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        background-color: cornflowerblue;
+        border-radius: 20px;
+        width: 220px;
+        height: 25px;
+        text-align: center;
+    }
+
+    .experiencia{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 300px;
+    }
+
+    h1{
+        margin-right: 240px;
+        color: white;
+        font-size: 30px;
+    }
+    
+    .h2-1{
+        width: 500px;
+        color: whitesmoke;
+        font-size: 15px;
+    }
+
+    span{
+        color: #DDA853;
+    }
+
+    .redes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-right: 345px;
+        margin-top: 20px;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        border-radius: 20px;
+        height: 35px;
+        text-decoration: none;
+        text-align: center;
+        background-color: darkslateblue;
+        color: white;
+        gap: 5px;
+    }
+
+    .svg{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25px;
+    }
+
+    @media screen and (max-width: 768px){
+        .sobre-mi{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            margin-right: 0px;
+        }
+
+        .experiencia{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-right: -60px;
+        }
+        
+        .redes{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-right: 0px;
+            margin-top: 30px;
+        }
+
+    }
+
+</style>

@@ -1,0 +1,113 @@
+---
+const technologies = [
+  { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
+  { name: 'CSS', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg' },
+  { name: 'JavaScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg' },
+  { name: 'TypeScript', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg' },
+  { name: 'Astro', icon: 'https://astro.build/assets/press/astro-icon-light-gradient.svg' },
+  { name: 'React', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
+  { name: 'Node.js', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg' },
+  { name: 'Git', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg' },
+];
+---
+
+<section class="technologies">
+    <h2>Tecnologia</h2>
+  <div class="tech-grid">
+    {technologies.map((tech, index) => (
+      <div class={`tech-item floating-${index % 4}`}>
+        <img src={tech.icon} alt={tech.name} />
+        <p>{tech.name}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+<style>
+  .technologies {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 4rem 0;
+  }
+
+  h2{
+    color: wheat;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1rem;
+  }
+
+  .tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .tech-item:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .tech-item img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+  }
+
+  .tech-item p {
+    color: white;
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  /* Floating animations */
+  .floating-0 {
+    animation: float1 3s ease-in-out infinite;
+  }
+
+  .floating-1 {
+    animation: float2 3.5s ease-in-out infinite;
+  }
+
+  .floating-2 {
+    animation: float3 4s ease-in-out infinite;
+  }
+
+  .floating-3 {
+    animation: float4 4.5s ease-in-out infinite;
+  }
+
+  @keyframes float1 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  @keyframes float2 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
+  }
+
+  @keyframes float3 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+
+  @keyframes float4 {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+  }
+</style>

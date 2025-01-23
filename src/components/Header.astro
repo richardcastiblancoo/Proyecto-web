@@ -1,0 +1,68 @@
+---
+import Carruzel from './Carruzel.astro'
+---
+
+<header class="header">
+    <nav class="navbar">
+        <ul>
+            <li><a class="conten_a" title="" href="">Sobre Mi</a></li>
+            <li><a class="conten_a" title="" href="">Tecnologia</a></li>
+            <li><a class="conten_a" title="" href="">Proyectos</a></li>
+            <li><a class="conten_a" title="" href="">Certificados</a></li>
+        </ul>
+    </nav>
+    <div class="carruzel">
+        <Carruzel />
+    </div>
+</header>
+
+<style>
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    ul,li{
+        list-style: none;
+        display: flex;
+        gap: 20px;
+    }
+
+    .conten_a{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        text-align: center;
+        color: wheat;
+    }
+
+    .carruzel{
+        display: none;
+    }
+
+    
+    @media screen and (max-width: 768px) {
+        .navbar{
+            display: none;
+        }
+
+        .carruzel{
+            display: flex;
+            justify-content: end;
+            align-items: end;
+            margin-left: 300px;
+            margin-top: 10px;
+        }
+    }
+
+</style>

@@ -1,5 +1,5 @@
 {
-  "name": "portafolio-web",
+  "name": "portafolio-web-astro",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -9,6 +9,10 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.1.8"
+    "astro": "^5.1.8",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.1",
+    "sweetalert2": "^11.15.10",
+    "tailwindcss": "^3.4.17"
   }
 }
